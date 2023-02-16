@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>Login Form</title>
   </head>
   <body>
-    <section class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <section class="flex items-center justify-center">
       <!-- login Container -->
-      <div class="bg-gray-300 flex rounded-2xl shadow-lg max-w-3xl p-5">
+      <div
+        class="bg-gray-300 flex rounded-2xl shadow-2xl max-w-3xl p-5 sm:item-center md:flex-row lg:flex-row sm:flex-col-reverse"
+      >
         <!-- form -->
-        <div class="px-5 sm:w-1/2">
+        <div class="relative px-5">
+          <img
+            class="absolute w-[120px] right-[40px]"
+            src="img/NDLogo.svg"
+            alt="logo"
+          />
+
           <h2 class="font-bold text-2xl">Login</h2>
           <p class="text-sm mt-4">If you are already a member, easily log in</p>
           <form class="flex flex-col gap-4" action="">
@@ -43,22 +51,22 @@
           </form>
 
           <div class="mt-3 mb-3 grid grid-cols-3 items-center text-gray-500">
-            <hr class="border-gray-500" />
-            <p class="text-center text-sm">OR</p>
-            <hr class="border-gray-500" />
+            <hr class="border-gray-500 sm:border-gray-600" />
+            <p class="text-center text-sm sm:text-black sm:font-bold">OR</p>
+            <hr class="border-gray-500 sm:border-gray-600" />
           </div>
           <button
-            class="bg-white flex justify-center items-center border py-2 text-sm font-bold w-full rounded-xl"
+            class="bg-white flex justify-center items-center hover:bg-black hover:text-white py-2 text-sm font-bold w-full rounded-xl"
           >
             <img class="mr-2 w-4" src="img/google-logo.png" alt="" />
             Login with Google
           </button>
           <p class="text-sm mt-3">Forgot your password?</p>
-          <hr class="border-gray-500 mt-2" />
+          <hr class="border-gray-500 mt-2 sm:border-gray-600" />
           <div class="flex justify-between items-center mt-2">
             <p class="text-sm">Don't have an account?</p>
             <button
-              class="px-2 py-1 bg-gray-400 rounded-xl hover:text-white hover:bg-black"
+              class="px-2 py-1 bg-gray-700 text-white rounded-xl hover:txt-white hover:bg-black active:bg-gray-700"
             >
               Register
             </button>
@@ -66,7 +74,7 @@
         </div>
 
         <!-- image -->
-        <div class="sm:block hidden w-1/2">
+        <div class="w-1/2 shadow-lg sm:w-[22rem] sm:h-[0px]">
           <img class="rounded-2xl" src="img/cosmetic-products1.jpg" alt="" />
         </div>
       </div>
